@@ -18,6 +18,5 @@ public class MixinTerminalStorageIngredientItemStackCraftingGridClear {
     @Inject(method = "clearGrid", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerInventory;placeItemBackInInventory(Lnet/minecraft/world/World;Lnet/minecraft/item/ItemStack;)V", shift = At.Shift.AFTER), locals = LocalCapture.CAPTURE_FAILHARD)
     private static void inject_clearGrid_fixDupeItems(TerminalStorageTabIngredientComponentItemStackCraftingCommon tabCommon, TerminalStorageTabIngredientComponentServer<ItemStack, Integer> tabServer, int channel, boolean toStorage, PlayerEntity player, CallbackInfo ci, CraftingInventory inventoryCrafting, int i, ItemStack itemStack, ItemStack remainder) {
         inventoryCrafting.setInventorySlotContents(i, ItemStack.EMPTY);
-        LogManager.getLogger("IntegratedTerminalsFix").info("Successfully fixed bug.");
     }
 }
