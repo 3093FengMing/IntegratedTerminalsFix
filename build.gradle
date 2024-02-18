@@ -146,6 +146,7 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     implementation fg.deobf("curse.maven:cyclops-core-232758:3900678")
+    implementation fg.deobf("curse.maven:common-capabilities-247007:3482420")
     implementation fg.deobf("curse.maven:integrated-dynamics-236307:3963794")
     implementation fg.deobf("curse.maven:integrated-tunnels-251389:3957238")
     implementation fg.deobf("curse.maven:integrated-crafting-287357:3993412")
