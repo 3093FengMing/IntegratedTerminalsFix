@@ -1,10 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.fengming.IntegratedTerminalsFix.mixin",
+  "package": "me.fengming.integratedterminalsfix.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "IntegratedTerminalsFix.refmap.json",
   "mixins": [
+    "MixinTerminalStorageIngredientItemStackCraftingGridClear"
   ],
   "client": [
   ],
