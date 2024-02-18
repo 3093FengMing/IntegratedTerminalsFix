@@ -1,0 +1,2 @@
+package me.fengming.integratedterminalsfix.mixin;public class MixinTerminalStorageIngredientItemStackCraftingGridClear {
+}
